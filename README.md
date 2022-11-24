@@ -1,2 +1,2 @@
-# Part-Time-Exocist
+# Pockemon Simulator
 A AR Mobile Game for Uni

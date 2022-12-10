@@ -34,7 +34,7 @@ namespace UnityEngine.XR.ARFoundation.Samples
  
         bool TryGetTouchPosition(out Vector2 touchPosition)
         {
-            if (Input.touchCount > 0 && Input.touchCount < 1)
+            if (Input.touchCount > 0)
             {
                 touchPosition = Input.GetTouch(0).position;
                 return true;

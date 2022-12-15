@@ -20,7 +20,7 @@ public class SpawnGameObject : MonoBehaviour
 
     float GetCurrentLightIntensity()
     {
-        // TODO: Implement this method to get the current light intensity
+       return 1.0f;
     }
 }
 

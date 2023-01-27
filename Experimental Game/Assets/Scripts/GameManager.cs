@@ -4,6 +4,18 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+
+    public static GameManager gameManager;
+    void Awake()
+    {
+        DontDestroyOnLoad(this);
+        if(gameManager==null){
+            gameManager = this;
+        }
+        else{
+            Destroy(gameManager);
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {

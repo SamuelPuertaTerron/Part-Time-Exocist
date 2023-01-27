@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 6a3f0043ff73c7f4a8db6d31ba7a0b99
   - enabled: 1
-    path: Assets/Scenes/Waitscreen.unity
+    path: Assets/Scenes/WaitScreen.unity
     guid: b0e906cc4c74fb449bc244ed8919808d
   - enabled: 1
     path: Assets/Scenes/Gameplay.unity

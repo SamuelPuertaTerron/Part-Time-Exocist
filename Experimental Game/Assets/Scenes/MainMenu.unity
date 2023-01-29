@@ -576,7 +576,7 @@ MonoBehaviour:
   - {fileID: -1459985105, guid: d53a447a00e378443980eb68e4c043df, type: 3}
   - {fileID: -2020628533, guid: d53a447a00e378443980eb68e4c043df, type: 3}
   - {fileID: -420593162, guid: d53a447a00e378443980eb68e4c043df, type: 3}
-  spritePerFrame: 50
+  spritePerFrame: 10
   loop: 1
   destroyOnEnd: 0
 --- !u!114 &428790922
@@ -731,7 +731,7 @@ MonoBehaviour:
   - {fileID: 1560133583, guid: 8e28946114176644c987eb5607ea2606, type: 3}
   - {fileID: 1327321895, guid: 8e28946114176644c987eb5607ea2606, type: 3}
   - {fileID: -990253598, guid: 8e28946114176644c987eb5607ea2606, type: 3}
-  spritePerFrame: 50
+  spritePerFrame: 10
   loop: 1
   destroyOnEnd: 0
 --- !u!114 &694869082

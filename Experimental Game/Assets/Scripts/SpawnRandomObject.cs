@@ -8,10 +8,12 @@ public class SpawnRandomObject : MonoBehaviour
 
     private float spawnTimer;
     private float currentTime;
+    private int SpawnedObjects;
 
     void Start()
     {
         spawnTimer = Random.Range(minSpawnTime, maxSpawnTime);
+        SpawnedObjects = 0;
     }
 
     void Update()
@@ -23,10 +25,11 @@ public class SpawnRandomObject : MonoBehaviour
             currentTime = 0;
             spawnTimer = Random.Range(minSpawnTime, maxSpawnTime);
 
-            if (!GameObject.Find(prefabToSpawn.name))
+            if (!GameObject.Find(prefabToSpawn.name) && SpawnedObjects < 1)
             {
-                Vector3 spawnPosition = Camera.main.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0));
+                Vector3 spawnPosition = Camera.main.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0f));
                 Instantiate(prefabToSpawn, spawnPosition, Quaternion.identity);
+                SpawnedObjects = 2;
             }
         }
     }

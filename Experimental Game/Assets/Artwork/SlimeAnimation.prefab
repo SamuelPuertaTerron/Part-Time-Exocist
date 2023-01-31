@@ -142,3 +142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultColor: {r: 1, g: 0.14173192, b: 0.14173192, a: 0.8666667}
   selectedColor: {r: 0.07489321, g: 0.87058824, b: 0.09305983, a: 1}
+  speed: 0.5
+  delay: 6
+  radius: 2
+  renderer: {fileID: 0}

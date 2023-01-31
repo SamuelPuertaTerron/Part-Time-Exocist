@@ -8,9 +8,24 @@ public class touchableManager : MonoBehaviour
     private List<GameObject> touchList = new List<GameObject>();
     private GameObject[] touchesOld;
     private RaycastHit hit;
-
+    private Transform player;
+    private bool _foundplayer;
+    
+    void Start()
+    {
+        _foundplayer = false;
+    }
     void Update ()
     {
+        if (_foundplayer == false){
+            player = GameObject.FindGameObjectWithTag("MainCamera").transform;
+        }
+        if (_foundplayer)
+        {
+            transform.LookAt(player);
+        }
+        
+        
         if (Input.touchCount > 0)
         {
             touchesOld = new GameObject[touchList.Count];

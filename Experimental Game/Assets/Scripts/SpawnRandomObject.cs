@@ -9,6 +9,8 @@ public class SpawnRandomObject : MonoBehaviour
     private float spawnTimer;
     private float currentTime;
     private int SpawnedObjects;
+    
+
 
     void Start()
     {
@@ -32,6 +34,8 @@ public class SpawnRandomObject : MonoBehaviour
                 SpawnedObjects = 2;
             }
         }
+
+       
     }
 }
 

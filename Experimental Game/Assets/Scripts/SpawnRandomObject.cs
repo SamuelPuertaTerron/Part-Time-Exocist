@@ -5,7 +5,7 @@ public class SpawnRandomObject : MonoBehaviour
     public GameObject prefabToSpawn;
     public float minSpawnTime = 1f;
     public float maxSpawnTime = 10f;
-
+    [Range(1,15)] public int _ghostSpawnDistance; 
     private float spawnTimer;
     private float currentTime;
     private int SpawnedObjects;
@@ -29,7 +29,7 @@ public class SpawnRandomObject : MonoBehaviour
 
             if (!GameObject.Find(prefabToSpawn.name) && SpawnedObjects < 1)
             {
-                Vector3 spawnPosition = Camera.main.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0f));
+                Vector3 spawnPosition = Camera.main.transform.position + Camera.main.transform.forward * _ghostSpawnDistance;
                 Instantiate(prefabToSpawn, spawnPosition, Quaternion.identity);
                 SpawnedObjects = 2;
             }

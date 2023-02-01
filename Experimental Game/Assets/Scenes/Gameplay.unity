@@ -258,8 +258,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabToSpawn: {fileID: 9221018199963480467, guid: 9c75d6c83e23d034eaf43ad622685460,
     type: 3}
-  minSpawnTime: 1
+  minSpawnTime: 5
   maxSpawnTime: 10
+  _ghostSpawnDistance: 13
 --- !u!1 &442306308
 GameObject:
   m_ObjectHideFlags: 0

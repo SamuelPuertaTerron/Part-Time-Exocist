@@ -27,7 +27,7 @@ public class InputManager : Singleton<InputManager>
    /// </summary>
    private void OnEnable()
    {
-    playerInput.Enable();
+       playerInput.Enable();
    }
    private void OnDisable()
    {

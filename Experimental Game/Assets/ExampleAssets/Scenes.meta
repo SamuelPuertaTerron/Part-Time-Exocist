@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Experimental Game/Assets/ExampleAssets/Scenes.meta
 guid: 4e7f5acf46ddb42618485f6adf8af0c7
+=======
+guid: 6793a8a8b32574d48b2f5e308db47290
+>>>>>>> main:Assets/Scenes.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

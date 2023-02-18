@@ -1,0 +1,32 @@
+{
+  "name": "com.unity.xr.arcore",
+  "displayName": "ARCore XR Plugin",
+  "version": "4.2.3",
+  "unity": "2020.3",
+  "description": "Provides native Google ARCore integration for use with Unity's multi-platform XR API.\nSupports the following features:\n-Efficient Background Rendering\n-Horizontal Planes\n-Depth Data\n-Anchors\n-Hit Testing\n-Occlusion",
+  "keywords": [
+    "arcore",
+    "ar",
+    "augmented",
+    "xr",
+    "reality",
+    "core"
+  ],
+  "dependencies": {
+    "com.unity.xr.arsubsystems": "4.2.3",
+    "com.unity.xr.management": "4.0.1",
+    "com.unity.modules.androidjni": "1.0.0",
+    "com.unity.modules.unitywebrequest": "1.0.0"
+  },
+  "upm": {
+    "changelog": "### Fixed,- Fixed a bug where the list of configurations per sesssion would not clear even when the [ARCoreSessionSubsystem](xref:UnityEngine.XR.ARCore.ARCoreSessionSubsystem) was deinitialized.,- Fixed a [memory leak](https://issuetracker.unity3d.com/issues/arcore-android-memory-leak-in-xr-application-when-using-arocclusionmanager-component) in the [AROcclusionManager](xref:UnityEngine.XR.ARFoundation.AROcclusionManager).,- Removed an errant bit mask that was being applied to the occlusion `XRCpuImage`s."
+  },
+  "upmCi": {
+    "footprint": "38f99e022bd671ca5f045e7a4bfac1ed141cd63a"
+  },
+  "repository": {
+    "url": "https://github.cds.internal.unity3d.com/unity/arfoundation.git",
+    "type": "git",
+    "revision": "497981bbdfaf531fe240edcfa8f6edfd9aa1567e"
+  }
+}

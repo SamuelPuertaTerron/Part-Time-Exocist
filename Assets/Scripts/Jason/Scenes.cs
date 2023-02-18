@@ -12,6 +12,7 @@ public class Scenes : MonoBehaviour
     }
 
     public void GameScreen(){
-        SceneManager.LoadScene("Gameplay");
+        SceneManager.LoadScene("Main");
     }
+
 }

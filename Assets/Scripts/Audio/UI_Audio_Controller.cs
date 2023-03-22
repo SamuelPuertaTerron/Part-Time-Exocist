@@ -8,21 +8,23 @@ public class UI_Audio_Controller : MonoBehaviour
 
     private AudioSource audioSource;
 
-    private AudioClip[] buttonsSounds;
+  //  private AudioClip[] buttonsSounds;
 
-    private int randomButtonSound;
+    public int randomButtonSound;
+
+    [SerializeField] AudioClip[] buttonsSounds;
 
     // Start is called before the first frame update
     void Start()
     {
         instance = this;
         audioSource = GetComponent<AudioSource>();
-        buttonsSounds = Resources.LoadAll<AudioClip>("UI_Sounds");
+       // buttonsSounds = Resources.LoadAll<AudioClip>("UI_Sounds");
     }
 
     public void PlayButtonSound()
     {
-        randomButtonSound = Random.Range(0, 3);
+        randomButtonSound = Random.Range(0, 4);
         audioSource.PlayOneShot(buttonsSounds[randomButtonSound]);
     }
 }

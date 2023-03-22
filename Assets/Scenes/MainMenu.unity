@@ -729,6 +729,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd4fb5b64ec42f64496d088b29e93ee3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  randomButtonSound: 0
+  buttonsSounds:
+  - {fileID: 8300000, guid: 0779815a1a4d1294ab894083ce5703fc, type: 3}
+  - {fileID: 8300000, guid: 4a68f81f3755af746ac0bd632298dbd6, type: 3}
+  - {fileID: 8300000, guid: 6f488ba9f10c00a489aa5f8fb58cbfc6, type: 3}
+  - {fileID: 8300000, guid: b5e81c9c496713c44b66613a147d8e80, type: 3}
 --- !u!82 &993048864
 AudioSource:
   m_ObjectHideFlags: 0

@@ -8,7 +8,7 @@ public class UI_Audio_Controller : MonoBehaviour
 
     private AudioSource audioSource;
 
-    private AudioClip[] buttonsSounds;
+    public AudioClip[] buttonsSounds;
 
     private int randomButtonSound;
 
@@ -17,7 +17,7 @@ public class UI_Audio_Controller : MonoBehaviour
     {
         instance = this;
         audioSource = GetComponent<AudioSource>();
-        buttonsSounds = Resources.LoadAll<AudioClip>("UI_Sounds");
+        //buttonsSounds = Resources.LoadAll<AudioClip>("UI_Sounds");
     }
 
     public void PlayButtonSound()

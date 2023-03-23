@@ -6,6 +6,9 @@ namespace PartTimeExocist
 {
     public class Water : GhostAIBase
     {
+        protected override string GetEnemyName() {
+            return "Mr Frozen";
+        }
         protected override void OnTakeDamage()
         {
             transform.localScale -= new Vector3(0.1f, 0.1f, 0.0f);
@@ -15,6 +18,7 @@ namespace PartTimeExocist
 
         protected override void OnDeath()
         {
+            transform.localScale = Vector3.one;
             Destroy(gameObject, 1.2f);
         }
     }

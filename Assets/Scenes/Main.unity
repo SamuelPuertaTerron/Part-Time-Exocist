@@ -333,7 +333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f34133f483886924ca505fc8cf2e2d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyName: Enemy Base
+  enemyName: Water Guy
   startMovementTimer: 2.5
   walkRange: 5
   attackRange: 5

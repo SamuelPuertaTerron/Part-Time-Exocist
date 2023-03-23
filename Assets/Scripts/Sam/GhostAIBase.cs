@@ -2,10 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace PartTimeExocist
-{
-    public class GhostAIBase : MonoBehaviour
-    {
+namespace PartTimeExocist {
+    public class GhostAIBase : MonoBehaviour {
         [Header("Basic Info")]
         [SerializeField] private string enemyName = "Enemy Base";
 
@@ -21,41 +19,38 @@ namespace PartTimeExocist
         [Header("Debug")]
         [SerializeField] private bool debug = true;
 
-        protected virtual void OnStart()
-        {
+        protected virtual void OnStart() {
 
         }
 
-        protected virtual void OnIdle()
-        {
+        protected virtual void OnIdle() {
 
         }
 
-        protected virtual void OnAttack()
-        {
+        protected virtual void OnAttack() {
 
         }
 
-        protected virtual void OnTakeDamage()
-        {
+        protected virtual void OnTakeDamage() {
         }
 
-        protected virtual void OnDeath()
-        {
+        protected virtual void OnDeath() {
+           
+        }
+
+        protected virtual void OnMove() {
 
         }
 
-        protected virtual void OnMove()
-        {
-
+        protected virtual string GetEnemyName() {
+            return string.Empty;
         }
 
         //---------Private----------------------------//
 
         #region Private 
 
-        private enum EEnemyState
-        {
+        private enum EEnemyState {
             None = 0,
             Idle = 1,
             Move = 2,
@@ -73,34 +68,28 @@ namespace PartTimeExocist
         private Vector2 m_pos;
 
 
-        private void Awake()
-        {
+        private void Awake() {
             m_healthManager = GetComponent<HealthManager>();
 
-            if (m_healthManager == null)
-            {
+            if (m_healthManager == null) {
                 Debug.LogError("Health Manager is Null: Assign it in the inspector");
             }
         }
 
-        private void OnEnable()
-        {
+        private void OnEnable() {
             m_healthManager.OnTakeDamage += OnTakeDamage;
-            m_healthManager.OnDeath += OnDeath;
+            m_healthManager.OnDeath += DeathState;
         }
 
-        private void OnDisable()
-        {
+        private void OnDisable() {
             m_healthManager.OnTakeDamage -= OnTakeDamage;
-            m_healthManager.OnDeath -= OnDeath;
+            m_healthManager.OnDeath -= DeathState;
         }
 
-        private void Start()
-        {
+        private void Start() {
             m_player = FindObjectOfType<TouchInput>().transform;
 
-            if (m_player == null)
-            {
+            if (m_player == null) {
                 Debug.LogError("Player is Null: Cannot find player");
             }
 
@@ -110,10 +99,8 @@ namespace PartTimeExocist
             OnStart();
         }
 
-        private void Update()
-        {
-            switch (m_enemyStates)
-            {
+        private void Update() {
+            switch (m_enemyStates) {
                 case EEnemyState.Idle:
                     IdleState();
                     break;
@@ -128,15 +115,12 @@ namespace PartTimeExocist
             }
         }
 
-        private void IdleState()
-        {
+        private void IdleState() {
             OnIdle();
         }
 
-        private void MoveState()
-        {
-            if (m_player == null)
-            {
+        private void MoveState() {
+            if (m_player == null) {
                 return;
             }
 
@@ -145,30 +129,29 @@ namespace PartTimeExocist
             OnMove();
         }
 
-        private void AttackState()
-        {
-            if (m_player == null)
-            {
+        private void AttackState() {
+            if (m_player == null) {
                 return;
             }
-            
-            if (m_currentAttackTimer <= 0)
-            {
+
+            if (m_currentAttackTimer <= 0) {
                 m_player.GetComponent<HealthManager>().TakeDamage(playerDamage);
                 m_currentAttackTimer = startAttackTimer;
-            }
-            else
-            {
+            } else {
                 m_currentAttackTimer -= Time.deltaTime;
             }
 
             OnAttack();
         }
 
-        void OnDrawGizmos()
-        {
-            if (debug)
-            {
+        private void DeathState() {
+            OnDeath();
+            ScreenShotManager.TakeScreenShot(GetEnemyName());
+            SceneController.Instance.LoadMainMenu();
+            
+        }
+        void OnDrawGizmos() {
+            if (debug) {
                 Gizmos.DrawWireSphere(transform.position, walkRange);
                 Gizmos.DrawWireSphere(transform.position, attackRange);
                 Gizmos.DrawWireCube(transform.position, m_pos);

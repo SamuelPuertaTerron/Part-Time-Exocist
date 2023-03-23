@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
+  companyName: Team Polariod
   productName: Part-Time-Exocist
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -793,7 +793,7 @@ PlayerSettings:
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
   metroPackageName: Part-Time-Exocist
-  metroPackageVersion: 
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -801,7 +801,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: Part-Time-Exocist
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: Part-Time-Exocist
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0

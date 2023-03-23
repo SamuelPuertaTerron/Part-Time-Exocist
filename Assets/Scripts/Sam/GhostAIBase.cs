@@ -85,13 +85,13 @@ namespace PartTimeExocist
 
         private void OnEnable()
         {
-            m_healthManager.OnTakeDamage += DamageState;
+            m_healthManager.OnTakeDamage += OnTakeDamage;
             m_healthManager.OnDeath += OnDeath;
         }
 
         private void OnDisable()
         {
-            m_healthManager.OnTakeDamage -= DamageState;
+            m_healthManager.OnTakeDamage -= OnTakeDamage;
             m_healthManager.OnDeath -= OnDeath;
         }
 
@@ -124,7 +124,6 @@ namespace PartTimeExocist
                     AttackState();
                     break;
                 case EEnemyState.Damage:
-                    DamageState();
                     break;
             }
         }
@@ -164,15 +163,6 @@ namespace PartTimeExocist
             }
 
             OnAttack();
-        }
-
-        private void DamageState()
-        {
-            transform.position = new Vector3(Random.Range(-5.0f, 5.0f),
-                                             Random.Range(-5.0f, 5.0f), 
-                                             0.0f);
-
-            OnTakeDamage();
         }
 
         void OnDrawGizmos()

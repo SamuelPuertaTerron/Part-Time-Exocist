@@ -10,8 +10,13 @@ AnimatorStateMachine:
   m_Name: Base Layer
   m_ChildStates:
   - serializedVersion: 1
+<<<<<<< Updated upstream:Assets/UI/Options menu.controller
     m_State: {fileID: 9168202826613047068}
     m_Position: {x: 270, y: 150, z: 0}
+=======
+    m_State: {fileID: 1301941920861019040}
+    m_Position: {x: 340, y: 160, z: 0}
+>>>>>>> Stashed changes:Assets/Animation/Ghost.controller
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []

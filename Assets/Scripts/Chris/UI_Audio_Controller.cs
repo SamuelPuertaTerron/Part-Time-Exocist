@@ -26,7 +26,7 @@ namespace PartTimeExocist
 
         public void PlayButtonSound()
         {
-            randomButtonSound = Random.Range(0, 4);
+            randomButtonSound = Random.Range(0, buttonsSounds.Length);
             audioSource.PlayOneShot(buttonsSounds[randomButtonSound]);
         }
     }

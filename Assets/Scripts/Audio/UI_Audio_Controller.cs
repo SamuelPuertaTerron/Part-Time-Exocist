@@ -22,7 +22,7 @@ public class UI_Audio_Controller : MonoBehaviour
 
     public void PlayButtonSound()
     {
-        randomButtonSound = Random.Range(0, 3);
+        randomButtonSound = Random.Range(0, buttonsSounds.Length);
         audioSource.PlayOneShot(buttonsSounds[randomButtonSound]);
     }
 }

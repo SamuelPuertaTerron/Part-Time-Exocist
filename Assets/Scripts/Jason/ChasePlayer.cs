@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
-
-public class touchableGameobject : MonoBehaviour
+namespace PartTimeExocist {
+public class ChasePlayer : MonoBehaviour
 {
     public Color defaultColor;
     public Color selectedColor;
@@ -22,26 +22,6 @@ public class touchableGameobject : MonoBehaviour
         startTime = Time.time;
     }
 
-
-    void onTouchDown()
-    {
-        mat.color = selectedColor;
-    }
-
-    void onTouchUp()
-    {
-        mat.color = defaultColor;
-    }
-
-    void onTouchStay()
-    {
-        mat.color = selectedColor;
-    }
-
-    void onTouchExit()
-    {
-        mat.color = defaultColor;
-    }
     void Update()
     {
 
@@ -65,4 +45,5 @@ public class touchableGameobject : MonoBehaviour
         
         Debug.Log(player);
     }
+}
 }

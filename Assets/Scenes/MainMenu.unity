@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748171, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -371,6 +371,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1991968117}
+  mainMenuButtons: {fileID: 1195931159}
 --- !u!1 &360908341
 GameObject:
   m_ObjectHideFlags: 0
@@ -467,6 +468,7 @@ RectTransform:
   - {fileID: 25118992}
   - {fileID: 428790920}
   - {fileID: 1195931160}
+  - {fileID: 1991968114}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -859,7 +861,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 668358827}
         m_TargetAssemblyTypeName: OptionsMenu, Assembly-CSharp
-        m_MethodName: Change
+        m_MethodName: BackButton
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -932,6 +934,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1991968117}
+  mainMenuButtons: {fileID: 1195931159}
 --- !u!1 &815880701
 GameObject:
   m_ObjectHideFlags: 0
@@ -1507,9 +1510,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1925265273}
-  - {fileID: 1461333870}
   - {fileID: 459738024}
-  - {fileID: 1991968114}
+  - {fileID: 1461333870}
   m_Father: {fileID: 360908345}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2363,6 +2365,7 @@ GameObject:
   - component: {fileID: 1991968115}
   - component: {fileID: 1991968117}
   - component: {fileID: 1991968118}
+  - component: {fileID: 1991968119}
   m_Layer: 5
   m_Name: Options menu
   m_TagString: Untagged
@@ -2385,13 +2388,13 @@ RectTransform:
   - {fileID: 1422968226}
   - {fileID: 964087893}
   - {fileID: 2091844297}
-  m_Father: {fileID: 1195931160}
+  m_Father: {fileID: 360908345}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 540}
-  m_SizeDelta: {x: 580, y: 1280}
+  m_AnchoredPosition: {x: 0, y: 116}
+  m_SizeDelta: {x: -456, y: 232}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1991968115
 MonoBehaviour:
@@ -2466,6 +2469,20 @@ Animation:
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &1991968119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991968113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dbbf81644b84794c97ce472ccc17f7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  mainMenuButtons: {fileID: 1195931159}
 --- !u!1 &2091844296
 GameObject:
   m_ObjectHideFlags: 0

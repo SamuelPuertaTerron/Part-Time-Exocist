@@ -2,20 +2,18 @@ using UnityEngine;
 
 public class SpawnRandomObject : MonoBehaviour
 {
-    public GameObject prefabToSpawn;
+    public GameObject[] prefabsToSpawn;  // an array of game objects to choose from
     public float minSpawnTime = 1f;
     public float maxSpawnTime = 10f;
     [Range(1,15)] public int _ghostSpawnDistance; 
     private float spawnTimer;
     private float currentTime;
-    private int SpawnedObjects;
+    private int spawnedObjects;
     
-
-
     void Start()
     {
         spawnTimer = Random.Range(minSpawnTime, maxSpawnTime);
-        SpawnedObjects = 0;
+        spawnedObjects = 0;
     }
 
     void Update()
@@ -27,15 +25,17 @@ public class SpawnRandomObject : MonoBehaviour
             currentTime = 0;
             spawnTimer = Random.Range(minSpawnTime, maxSpawnTime);
 
-            if (!GameObject.Find(prefabToSpawn.name) && SpawnedObjects < 1)
+            if (spawnedObjects < 1)
             {
+                // choose a random prefab from the array
+                GameObject prefabToSpawn = prefabsToSpawn[Random.Range(0, prefabsToSpawn.Length)];
+
+                // spawn the selected prefab
                 Vector3 spawnPosition = Camera.main.transform.position + Camera.main.transform.forward * _ghostSpawnDistance;
                 Instantiate(prefabToSpawn, spawnPosition, Quaternion.identity);
-                SpawnedObjects = 2;
+                spawnedObjects++;
             }
         }
-
-       
     }
 }
 

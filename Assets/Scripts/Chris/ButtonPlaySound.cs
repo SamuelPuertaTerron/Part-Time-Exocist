@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 namespace PartTimeExocist
 {
-    public class Button_Play_Sound : MonoBehaviour
+    public class ButtonPlaySound : MonoBehaviour
     {
         // Start is called before the first frame update
         void Start()
@@ -13,7 +13,7 @@ namespace PartTimeExocist
 
         private void ButtonPlay()
         {
-            UI_Audio_Controller.instance.PlayButtonSound();
+           UIAudioManager.Instance.PlayButtonSound();
         }
     }
 }

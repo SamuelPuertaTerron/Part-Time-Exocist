@@ -1,13 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace PartTimeExocist
 {
-    public class UI_Audio_Controller : MonoBehaviour
+    public class UIAudioManager : Extensions.Singleton<UIAudioManager>
     {
-        public static UI_Audio_Controller instance;
-
         private AudioSource audioSource;
 
         //  private AudioClip[] buttonsSounds;
@@ -19,9 +15,7 @@ namespace PartTimeExocist
         // Start is called before the first frame update
         void Start()
         {
-            instance = this;
             audioSource = GetComponent<AudioSource>();
-            // buttonsSounds = Resources.LoadAll<AudioClip>("UI_Sounds");
         }
 
         public void PlayButtonSound()

@@ -96,6 +96,8 @@ namespace PartTimeExocist {
             m_currentMovementTimer = startMovementTimer;
             m_currentAttackTimer = startAttackTimer;
 
+            enemyName = GetEnemyName();
+
             OnStart();
         }
 

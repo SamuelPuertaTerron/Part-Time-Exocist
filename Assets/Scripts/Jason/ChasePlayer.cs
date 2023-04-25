@@ -43,7 +43,7 @@ public class ChasePlayer : MonoBehaviour
             renderer.material.color = Color.white;
         }
         
-        Debug.Log(player);
+    
     }
 }
 }

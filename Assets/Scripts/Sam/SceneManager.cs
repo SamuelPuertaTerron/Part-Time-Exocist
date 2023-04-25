@@ -18,7 +18,6 @@ namespace PartTimeExocist {
             SceneManager.LoadScene("Main");
         }
     }
-
 }
 
 

@@ -18,7 +18,7 @@ namespace PartTimeExocist
 
         protected override void OnDeath()
         {
-            transform.localScale = Vector3.one;
+            transform.localScale = Vector3.one;            
             Destroy(gameObject, 1.2f);
         }
     }

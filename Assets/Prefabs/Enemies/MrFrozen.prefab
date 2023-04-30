@@ -16,12 +16,12 @@ GameObject:
   - component: {fileID: 7185349248408145452}
   - component: {fileID: 7185349248408145450}
   m_Layer: 0
-  m_Name: Ghost
+  m_Name: MrFrozen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7185349248408145459
 Transform:
   m_ObjectHideFlags: 0
@@ -49,6 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f34133f483886924ca505fc8cf2e2d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scriptableObject: {fileID: 11400000, guid: 5ac27a3d55336274588fa7ba479960d7, type: 2}
   enemyName: Water Guy
   startMovementTimer: 2.5
   walkRange: 5
@@ -165,7 +166,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7185349248408145463}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 52521582070222e4d81e934fb8c0fe5b, type: 3}
   m_Name: 

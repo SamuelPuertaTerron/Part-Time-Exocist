@@ -21,7 +21,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4939925572662618813
 Transform:
   m_ObjectHideFlags: 0
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
-  damageType: 0
+  damageType: 1
 --- !u!114 &1571762652382617479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,7 +130,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 63081296309270814}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 52521582070222e4d81e934fb8c0fe5b, type: 3}
   m_Name: 
@@ -169,6 +169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbd95e66f37c3a442bddfd3e1984a002, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scriptableObject: {fileID: 11400000, guid: 876f4542795e3c34f92a59d957e9e68c, type: 2}
   enemyName: Enemy Base
   startMovementTimer: 2.5
   walkRange: 5

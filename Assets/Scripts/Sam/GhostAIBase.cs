@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace PartTimeExocist {
     public class GhostAIBase : MonoBehaviour {
+
+        public EnemyScriptableObject scriptableObject;
+
         [Header("Basic Info")]
         [SerializeField] private string enemyName = "Enemy Base";
 
@@ -148,6 +151,7 @@ namespace PartTimeExocist {
 
         private void DeathState() {
             OnDeath();
+            scriptableObject.isUnlocked = true;
             ScreenShotManager.TakeScreenShot(GetEnemyName());
             SceneController.Instance.LoadMainMenu();
             

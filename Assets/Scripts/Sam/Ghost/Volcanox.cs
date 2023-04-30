@@ -7,7 +7,7 @@ namespace PartTimeExocist
     public class Volcanox : GhostAIBase
     {
         protected override string GetEnemyName() {
-            return "Eye Boss";
+            return "Volcanox";
         }
         protected override void OnTakeDamage()
         {

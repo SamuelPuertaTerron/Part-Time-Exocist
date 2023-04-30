@@ -48,7 +48,7 @@ namespace PartTimeExocist {
         protected virtual string GetDateTime()
         {
             System.DateTime dt = System.DateTime.Now;
-            return dt.ToString("HH-mm-ss dd-MM-yyyy");
+            return "$£"+dt.ToString("HH-mm-ss dd-MM-yyyy");
         }
 
         //---------Private----------------------------//
@@ -101,6 +101,8 @@ namespace PartTimeExocist {
             m_currentMovementTimer = startMovementTimer;
             m_currentAttackTimer = startAttackTimer;
 
+            enemyName = GetEnemyName();
+
             OnStart();
         }
 
@@ -152,7 +154,7 @@ namespace PartTimeExocist {
         private void DeathState() {
             OnDeath();
             ScreenShotManager.TakeScreenShot(GetDateTime()); 
-            SceneController.Instance.LoadMainMenu();
+            SceneController.Instance.LoadWaitScene();
             
         }
         void OnDrawGizmos() {

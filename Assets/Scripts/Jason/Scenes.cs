@@ -1,18 +1,24 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Scenes : MonoBehaviour
-{
-    public void WaitScreen(){
-        SceneManager.LoadScene("WaitScreen");
-    }
+namespace PartTimeExocist {
+    
+    //Pretty self exoplanitory
 
-    public void MainMenu(){
-        SceneManager.LoadScene("MainMenu");
-    }
+    public class Scenes : MonoBehaviour {
+        public void WaitScreen() {
+            SceneManager.LoadScene("WaitScreen");
+        }
 
-    public void GameScreen(){
-        SceneManager.LoadScene("Main");
-    }
+        public void MainMenu() {
+            SceneManager.LoadScene("MainMenu");
+        }
 
+        public void GameScreen() {
+            SceneManager.LoadScene("Main");
+        }
+
+    }
 }
+
+

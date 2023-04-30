@@ -204,11 +204,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 23030242}
   m_CullTransparentMesh: 1
---- !u!224 &90845815 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 2021767546612920285, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
-  m_PrefabInstance: {fileID: 1498719396}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &148711548
 GameObject:
   m_ObjectHideFlags: 0
@@ -224,7 +219,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &148711549
 RectTransform:
   m_ObjectHideFlags: 0
@@ -456,9 +451,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5603805263042154516, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_text
+      value: The Pyramidas is a tough opponent, but is fortunately quite limited
+        in its agility. This one will take some time to defeat.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603805263042154516, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985505215700666586, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6257539051697282134, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
       propertyPath: m_Name
       value: Book Entry Prefab (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6580227576979410838, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7334324277872891919, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 2069514560, guid: a080ff653e1d6d24993636b04e063806, type: 3}
+    - target: {fileID: 8097900970067381249, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_text
+      value: Pyramidas
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097900970067381249, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -621,9 +645,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5603805263042154516, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_text
+      value: 'The Volcanox is a very dangerous creature that can do a lot of damage,
+        so avoid its attacks as much as possible.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603805263042154516, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985505215700666586, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6257539051697282134, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
       propertyPath: m_Name
       value: Book Entry Prefab (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6580227576979410838, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7334324277872891919, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -971627389, guid: 04ea98f2bfab99c4999286a908b5c817, type: 3}
+    - target: {fileID: 8097900970067381249, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_text
+      value: Volcanox
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097900970067381249, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -839,7 +894,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 900, y: 0}
+  m_SizeDelta: {x: 900, y: 80}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &373541543
 MonoBehaviour:
@@ -1085,9 +1140,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5603805263042154516, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_text
+      value: The Oculosis is the most powerful beast I have ever seen. It is fast
+        and strong, so watch out for it.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603805263042154516, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985505215700666586, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6257539051697282134, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
       propertyPath: m_Name
       value: Book Entry Prefab (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6580227576979410838, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7334324277872891919, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -367979070, guid: 314e3427429470c4e8304fd5c089ffcb, type: 3}
+    - target: {fileID: 8097900970067381249, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_text
+      value: Oculosis
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097900970067381249, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -1184,9 +1268,74 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5603805263042154516, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_text
+      value: This small enemy is often mistaken as a frozen droplet of water, but
+        is in fact a cute but dangerous creature. Do not underestimate it.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603805263042154516, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603805263042154516, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603805263042154516, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603805263042154516, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985505215700666586, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6257539051697282134, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
       propertyPath: m_Name
       value: Book Entry Prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 6580227576979410838, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7334324277872891919, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 54327929, guid: 311f0766fee9bf844980ab5030c91211, type: 3}
+    - target: {fileID: 7334324277872891919, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7334324277872891919, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7334324277872891919, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097900970067381249, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_text
+      value: Hydro-phantom
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097900970067381249, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097900970067381249, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097900970067381249, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097900970067381249, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -2855,105 +3004,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1463106516}
   m_CullTransparentMesh: 1
---- !u!1001 &1498719396
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 2
-    m_TransformParent: {fileID: 1845116031}
-    m_Modifications:
-    - target: {fileID: 2021767546612920285, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2021767546612920285, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2021767546612920285, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
-      propertyPath: m_RootOrder
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2021767546612920285, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2021767546612920285, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2021767546612920285, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2021767546612920285, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2021767546612920285, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 900
-      objectReference: {fileID: 0}
-    - target: {fileID: 2021767546612920285, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 600
-      objectReference: {fileID: 0}
-    - target: {fileID: 2021767546612920285, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2021767546612920285, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2021767546612920285, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2021767546612920285, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2021767546612920285, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2021767546612920285, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2021767546612920285, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2021767546612920285, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2021767546612920285, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2021767546612920285, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2021767546612920285, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2021767546612920285, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6257539051697282134, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
-      propertyPath: m_Name
-      value: Book Entry Prefab (5)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_AddedGameObjects: []
-  m_SourcePrefab: {fileID: 100100000, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
 --- !u!1 &1578620444
 GameObject:
   m_ObjectHideFlags: 0
@@ -3287,7 +3337,6 @@ RectTransform:
   - {fileID: 1679244464}
   - {fileID: 248265244}
   - {fileID: 9017570}
-  - {fileID: 90845815}
   m_Father: {fileID: 683662151}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3550,9 +3599,50 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5603805263042154516, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_text
+      value: Pyro-demons are quite difficult to deal with as they are quite energetic
+        and very dangerous. Proceed with caution.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603805263042154516, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985505215700666586, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6257539051697282134, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
       propertyPath: m_Name
       value: Book Entry Prefab (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6580227576979410838, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7334324277872891919, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 913340843, guid: 195abcd3117085e459f9f8dd2c868d43, type: 3}
+    - target: {fileID: 7334324277872891919, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7334324277872891919, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7334324277872891919, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097900970067381249, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_text
+      value: Pyro-demon
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097900970067381249, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -3577,7 +3667,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1929798631
 RectTransform:
   m_ObjectHideFlags: 0

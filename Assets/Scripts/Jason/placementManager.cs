@@ -1,10 +1,9 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 
-public class placementManager : MonoBehaviour
+public class PlacementManager : MonoBehaviour
 {   
     public ARRaycastManager raycastManager;
     public GameObject _pointerObj;

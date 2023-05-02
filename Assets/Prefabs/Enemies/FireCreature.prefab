@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 4061172039783487237}
   - component: {fileID: 6010533796139529138}
   - component: {fileID: 1571762652382617479}
-  - component: {fileID: 6803485522242831846}
   - component: {fileID: 8133434315559456061}
+  - component: {fileID: -1821600948863625663}
   m_Layer: 0
   m_Name: FireCreature
   m_TagString: Untagged
@@ -141,22 +141,6 @@ MonoBehaviour:
   delay: 3
   radius: 0.5
   renderer: {fileID: 5262952211483646483}
---- !u!58 &6803485522242831846
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 63081296309270814}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 1.28
 --- !u!114 &8133434315559456061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,3 +160,16 @@ MonoBehaviour:
   startAttackTimer: 1
   playerDamage: 15
   debug: 1
+--- !u!135 &-1821600948863625663
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63081296309270814}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.28
+  m_Center: {x: 0, y: 0, z: 0}

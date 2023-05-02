@@ -1,6 +1,8 @@
 using UnityEngine;
 using System.Collections;
-using UnityEngine.XR.ARCore;
+using System.Collections.Generic;
+using UnityEngine.XR.ARFoundation;
+using UnityEngine.XR.ARSubsystems;
 
 namespace PartTimeExocist
 {
@@ -8,11 +10,13 @@ namespace PartTimeExocist
     {
         private InputManager inputManager;
         private Camera mainCamera;
-        
+        private ARRaycastManager raycastManager;
+
         private void Awake()
         {
             inputManager = InputManager.Instance;
             mainCamera = Camera.main;
+            raycastManager = FindObjectOfType<ARRaycastManager>();
         }
 
         private void OnEnable()
@@ -27,11 +31,12 @@ namespace PartTimeExocist
 
         public void Move(Vector2 screenPosition, float time)
         {
+            List<ARRaycastHit> raycastHits = new List<ARRaycastHit>();
             Vector3 worldPosition = Camera.main.ScreenToWorldPoint(screenPosition);
             Ray ray = mainCamera.ScreenPointToRay(worldPosition);
-            RaycastHit hit;		 
-            if(Physics.Raycast(worldPosition, transform.forward * 1000, out hit)) {
-                hit.transform.gameObject.GetComponent<HealthManager>().TakeDamage(15);
+            RaycastHit hit;
+            if(raycastManager.Raycast(ray, raycastHits)) {
+                
             }
         }
 

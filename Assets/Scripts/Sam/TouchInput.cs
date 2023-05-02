@@ -25,15 +25,10 @@ namespace PartTimeExocist
         public void Move(Vector2 screenPosition, float time)
         {
             Vector3 worldPosition = Camera.main.ScreenToWorldPoint(screenPosition);
-            
-            Collider2D[] hitColliders = Physics2D.OverlapCircleAll(worldPosition, 2.0f);
 
-            foreach (Collider2D hitCollider in hitColliders)
-            {
-                if (hitCollider.gameObject.GetComponent<HealthManager>() != null)
-                {
-                    hitCollider.gameObject.GetComponent<HealthManager>().TakeDamage(0.1f);
-                }
+            RaycastHit hit;
+            if(Physics.Raycast(worldPosition, transform.forward * 1000, out hit)) {
+                hit.transform.gameObject.GetComponent<HealthManager>().TakeDamage(15);
             }
         }
 

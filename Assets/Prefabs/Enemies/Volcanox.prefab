@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1518233129255974526}
   - component: {fileID: 6010533796139529138}
   - component: {fileID: 1571762652382617479}
-  - component: {fileID: 6803485522242831846}
+  - component: {fileID: 2069623762976022362}
   m_Layer: 0
   m_Name: Volcanox
   m_TagString: Untagged
@@ -160,19 +160,16 @@ MonoBehaviour:
   delay: 3
   radius: 0.5
   renderer: {fileID: 5262952211483646483}
---- !u!58 &6803485522242831846
-CircleCollider2D:
+--- !u!135 &2069623762976022362
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 63081296309270814}
-  m_Enabled: 1
-  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.28
+  m_Radius: 0.64
+  m_Center: {x: 0, y: 0, z: 0}

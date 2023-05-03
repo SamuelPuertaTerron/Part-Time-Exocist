@@ -43,7 +43,6 @@ namespace PartTimeExocist
                         tmp.text = tempString;
                         if (count%2 == 0)
                         {
-                            
                             GameObject String = Instantiate(stringPrefab, stringGrid);
                             this.GetComponent<RectTransform>().sizeDelta = new Vector2(900, 760 + (680 * count/2));
                             String.transform.GetChild(Random.Range(1, 4)).gameObject.SetActive(true);

@@ -457,8 +457,16 @@ PrefabInstance:
         in its agility. This one will take some time to defeat.
       objectReference: {fileID: 0}
     - target: {fileID: 5603805263042154516, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 8213541507726985619, guid: 3ef3c237fa150784b8764996249459e6, type: 2}
+    - target: {fileID: 5603805263042154516, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603805263042154516, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5985505215700666586, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
       propertyPath: m_IsActive
@@ -481,8 +489,16 @@ PrefabInstance:
       value: Pyramidas
       objectReference: {fileID: 0}
     - target: {fileID: 8097900970067381249, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 8213541507726985619, guid: 3ef3c237fa150784b8764996249459e6, type: 2}
+    - target: {fileID: 8097900970067381249, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097900970067381249, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -653,8 +669,16 @@ PrefabInstance:
 '
       objectReference: {fileID: 0}
     - target: {fileID: 5603805263042154516, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 8213541507726985619, guid: 3ef3c237fa150784b8764996249459e6, type: 2}
+    - target: {fileID: 5603805263042154516, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603805263042154516, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5985505215700666586, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
       propertyPath: m_IsActive
@@ -677,8 +701,16 @@ PrefabInstance:
       value: Volcanox
       objectReference: {fileID: 0}
     - target: {fileID: 8097900970067381249, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 8213541507726985619, guid: 3ef3c237fa150784b8764996249459e6, type: 2}
+    - target: {fileID: 8097900970067381249, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097900970067381249, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -1146,8 +1178,16 @@ PrefabInstance:
         and strong, so watch out for it.
       objectReference: {fileID: 0}
     - target: {fileID: 5603805263042154516, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 8213541507726985619, guid: 3ef3c237fa150784b8764996249459e6, type: 2}
+    - target: {fileID: 5603805263042154516, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603805263042154516, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5985505215700666586, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
       propertyPath: m_IsActive
@@ -1170,8 +1210,16 @@ PrefabInstance:
       value: Oculosis
       objectReference: {fileID: 0}
     - target: {fileID: 8097900970067381249, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 8213541507726985619, guid: 3ef3c237fa150784b8764996249459e6, type: 2}
+    - target: {fileID: 8097900970067381249, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097900970067381249, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -1286,8 +1334,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5603805263042154516, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 8213541507726985619, guid: 3ef3c237fa150784b8764996249459e6, type: 2}
+    - target: {fileID: 5603805263042154516, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603805263042154516, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5985505215700666586, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
       propertyPath: m_IsActive
@@ -1334,8 +1390,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8097900970067381249, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 8213541507726985619, guid: 3ef3c237fa150784b8764996249459e6, type: 2}
+    - target: {fileID: 8097900970067381249, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097900970067381249, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -2077,6 +2141,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1818838933}
+        m_TargetAssemblyTypeName: PartTimeExocist.UIPaloriodCreator, Assembly-CSharp
+        m_MethodName: CreatePhotos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3199,7 +3275,6 @@ GameObject:
   - component: {fileID: 1818838929}
   - component: {fileID: 1818838932}
   - component: {fileID: 1818838931}
-  - component: {fileID: 1818838934}
   - component: {fileID: 1818838933}
   m_Layer: 5
   m_Name: Content
@@ -3284,22 +3359,6 @@ MonoBehaviour:
   ropeParent: {fileID: 206594811}
   image: {fileID: 39695043572203538, guid: da15524a167245e4fb55a21296c5943b, type: 3}
   rope: {fileID: 1350512009527695022, guid: 79b9328268076344b9c1763c96c8c384, type: 3}
---- !u!114 &1818838934
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1818838928}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02f94fe9a690b4a4da7377c5a8b9dd8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  picGrid: {fileID: 373541542}
-  stringGrid: {fileID: 206594811}
-  polaroidPrefab: {fileID: 39695043572203538, guid: da15524a167245e4fb55a21296c5943b, type: 3}
-  stringPrefab: {fileID: 1350512009527695022, guid: 79b9328268076344b9c1763c96c8c384, type: 3}
 --- !u!1 &1845116030
 GameObject:
   m_ObjectHideFlags: 0
@@ -3605,8 +3664,16 @@ PrefabInstance:
         and very dangerous. Proceed with caution.
       objectReference: {fileID: 0}
     - target: {fileID: 5603805263042154516, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 8213541507726985619, guid: 3ef3c237fa150784b8764996249459e6, type: 2}
+    - target: {fileID: 5603805263042154516, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603805263042154516, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5985505215700666586, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
       propertyPath: m_IsActive
@@ -3641,8 +3708,16 @@ PrefabInstance:
       value: Pyro-demon
       objectReference: {fileID: 0}
     - target: {fileID: 8097900970067381249, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 8213541507726985619, guid: 3ef3c237fa150784b8764996249459e6, type: 2}
+    - target: {fileID: 8097900970067381249, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097900970067381249, guid: 11c2477a46da4fb46bed6aaadc95e7c0, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []

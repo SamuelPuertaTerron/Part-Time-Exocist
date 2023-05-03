@@ -31,13 +31,7 @@ namespace PartTimeExocist
 
         public void Move(Vector2 screenPosition, float time)
         {
-            List<ARRaycastHit> raycastHits = new List<ARRaycastHit>();
-            Vector3 worldPosition = Camera.main.ScreenToWorldPoint(screenPosition);
-            Ray ray = mainCamera.ScreenPointToRay(worldPosition);
-            RaycastHit hit;
-            if(raycastManager.Raycast(ray, raycastHits)) {
-                
-            }
+            FindObjectOfType<HealthManager>().TakeDamage(0.1f);  
         }
 
         private void OnDrawGizmos()

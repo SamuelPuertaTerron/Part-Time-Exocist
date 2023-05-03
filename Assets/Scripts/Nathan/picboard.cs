@@ -36,7 +36,7 @@ namespace PartTimeExocist
                         TextMeshProUGUI tmp = Polaroid.transform.GetChild(0).GetChild(1).GetComponent<TextMeshProUGUI>();
                         //string datetimeString = System.DateTime.Now.ToString();
                         //string dateString = oldString.Substring(0, 10);
-                        string tempString = file.Substring(file.IndexOf("$£"), 21);//file.Length - 14); //file name to date
+                        string tempString = file.Substring(file.IndexOf("$ï¿½"), 21);//file.Length - 14); //file name to date
                         //tempString = tempString.Substring(0, tempString.Length - 4); //chop ".png"
                         tempString = tempString.Substring(11, 10);
                         tempString = tempString.Substring(0,2)+"/"+ tempString.Substring(3, 2) + "/" + tempString.Substring(6,4); //swap the "-"s

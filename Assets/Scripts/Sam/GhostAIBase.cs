@@ -45,11 +45,6 @@ namespace PartTimeExocist {
         protected virtual string GetEnemyName() {
             return string.Empty;
         }
-        protected virtual string GetDateTime()
-        {
-            System.DateTime dt = System.DateTime.Now;
-            return "$£"+dt.ToString("HH-mm-ss dd-MM-yyyy");
-        }
 
         //---------Private----------------------------//
 
@@ -153,7 +148,7 @@ namespace PartTimeExocist {
 
         private void DeathState() {
             OnDeath();
-            ScreenShotManager.TakeScreenShot(GetDateTime()); 
+            ScreenShotManager.TakeScreenShot(GetEnemyName()); 
             SceneController.Instance.LoadWaitScene();
             
         }

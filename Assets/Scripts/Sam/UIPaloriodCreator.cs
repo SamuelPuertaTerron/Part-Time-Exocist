@@ -12,6 +12,11 @@ namespace PartTimeExocist {
 
         private List<string> m_CurrentPictureNames = new List<string>();
 
+        private void Start()
+        {
+            CreatePhotos();
+        }
+
         public void CreatePhotos() {
             if (Directory.Exists(ScreenShotManager.FolderName)) {
                 if (Directory.GetFiles(ScreenShotManager.FolderName).Length > 0) {
